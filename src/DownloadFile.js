@@ -8,10 +8,10 @@ class DownloadFile extends React.Component {
   }
 
   downloadFile = (props) => {
-    fetch(this.props.img).then((response) => {
-      response.blob().then((blob) => {
-        let url = window.URL.createObjectURL(blob);
-        let a = document.createElement('a');
+    void fetch(this.props.img).then((response) => {
+      void response.blob().then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
         a.href = url;
         a.download = 'meme';
         a.click();
