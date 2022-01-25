@@ -7,7 +7,7 @@ class DownloadFile extends React.Component {
     console.log(props.img);
   }
 
-  downloadFile = (props) => {
+  downloadFile = () => {
     void fetch(this.props.img).then((response) => {
       void response.blob().then((blob) => {
         const url = window.URL.createObjectURL(blob);
