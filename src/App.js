@@ -165,7 +165,6 @@ function App() {
               setMemeChoice(e.currentTarget.value);
             }}
           >
-            {' '}
             {memeNames.map(function (item, index) {
               return (
                 <option value={item} key={index.memeChoice}>
@@ -175,7 +174,15 @@ function App() {
             })}
           </select>
         </label>
-
+        <label>
+          Meme template
+          <input
+            placeholder="find meme"
+            onChange={(e) => {
+              setMemeChoice(e.currentTarget.value);
+            }}
+          />
+        </label>{' '}
         <h3>Customize your meme:</h3>
         <label>
           Top text
