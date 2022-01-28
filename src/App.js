@@ -181,7 +181,7 @@ function App() {
         </label>
         <br />
         <label>
-          Bottom Text
+          Bottom text
           <input placeholder="Bottom line" onChange={handleSubmitBottom} />
         </label>
         <DownloadFile img={img} />
