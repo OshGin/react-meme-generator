@@ -22,7 +22,7 @@ class DownloadFile extends React.Component {
   render() {
     return (
       <div id="container">
-        <button onClick={this.downloadFile}>Download your meme</button>
+        <button onClick={this.downloadFile}>Download</button>
         <p />
       </div>
     );
