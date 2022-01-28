@@ -157,22 +157,24 @@ function App() {
       <div className="meme">
         {/* /* Dropdown Menu */}
         <h3>Choose your meme:</h3>
-
-        <select
-          value={memeChoice}
-          onChange={(e) => {
-            setMemeChoice(e.currentTarget.value);
-          }}
-        >
-          {' '}
-          {memeNames.map(function (item, index) {
-            return (
-              <option value={item} key={index.memeChoice}>
-                {item}
-              </option>
-            );
-          })}
-        </select>
+        <label>
+          Meme template
+          <select
+            value={memeChoice}
+            onChange={(e) => {
+              setMemeChoice(e.currentTarget.value);
+            }}
+          >
+            {' '}
+            {memeNames.map(function (item, index) {
+              return (
+                <option value={item} key={index.memeChoice}>
+                  {item}
+                </option>
+              );
+            })}
+          </select>
+        </label>
 
         <h3>Customize your meme:</h3>
         <label>
