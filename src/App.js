@@ -153,7 +153,7 @@ function App() {
   return (
     <div className="App">
       <h1>React Meme Generator</h1>
-      <img src={img} alt="a random Meme" />
+      <img src={img} alt="a random Meme" data-test-id="meme-image" />
       <div className="meme">
         {/* /* Dropdown Menu */}
         <h3>Choose your meme:</h3>
