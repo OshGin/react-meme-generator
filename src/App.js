@@ -175,9 +175,15 @@ function App() {
         </select>
 
         <h3>Customize your meme:</h3>
-        <input placeholder="Top line" onChange={handleSubmitTop} />
+        <label>
+          Top text
+          <input placeholder="Top line" onChange={handleSubmitTop} />
+        </label>
         <br />
-        <input placeholder="Bottom line" onChange={handleSubmitBottom} />
+        <label>
+          Bottom Text
+          <input placeholder="Bottom line" onChange={handleSubmitBottom} />
+        </label>
         <DownloadFile img={img} />
       </div>
     </div>
